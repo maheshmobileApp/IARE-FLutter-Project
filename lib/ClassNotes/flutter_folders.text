@@ -1,0 +1,27 @@
+android : This folder all relevent data to compile and create a working Android app(apk or appbundle).
+
+          android/app/bundle.gradle -> it contains the applicationId that required when submitting to Google Play Store.
+          android/app/src/main/AndroidManifest.xml --> Here you can specify intents or capabilities that your is going to use.
+
+
+
+build: The Build Folder will created when the flutter build tools are executed for the first time. It contains the generated files needed to run the app on the different platforms. each platform has its own subfolder.
+
+ios : Similar to the android folder but ios related fies.
+       ios/Runner/Appdelegate.swift -> the entry point for the ios app.
+       ios/Runner/info.plist -> contains all app-related settings. 
+lib -> folder is where your app code will be located. 
+       Make sure to plan your code structur before starting to develop your app. 
+linux
+macos
+test -> pul all yur test files here. 
+web -> the web-specifi code can be found in this folder.
+windows
+.gitignore -> contains information about what files and folders are to be exculed from version controll(github,gitlab, bitbucket)
+
+pubspec.yaml -> The pubspecs contains project description. constratins,dependencies,assets and fonts. 
+README.md
+
+unit testcase
+widget test cases 
+integration test cases

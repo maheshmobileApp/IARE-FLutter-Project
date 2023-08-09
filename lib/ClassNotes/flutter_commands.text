@@ -1,0 +1,5 @@
+1)flutter doctor -> 
+2)Create Flutter Project.
+3) flutter run
+4) flutter run -d chrome 
+5) flutter run -d chrome -t lib/main_dev.dart 

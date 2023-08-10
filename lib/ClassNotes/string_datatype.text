@@ -1,0 +1,41 @@
+/*Number,String,bool,List,Map*/
+
+String: String is plan text that contains one or more characters including a combination of letters and numbers or special characters.
+
+//datatype variablename = value ;
+
+String name = 'Hello this is dart program';
+String lastName = "Flutter ";
+
+String Properties:
+
+isEmpty : return the true or false . if string contain empty characters this will return true . name.isEmpty 
+Length : characters count (lastName.Length -> )
+
+Methods: 
+
+1)trim : return the string without any spaces in left and right side of the string 
+
+String fullName = "    mah   ehs   " 
+
+fullName.trim() -> "mahesh", trimleft, trimright 
+
+2) toUpperCase() -> Convert the all characters in this string to uppercase 
+
+  String name = "mahesh byte academy"
+  name.toUpperCase() -> "MAHESH BYTE ACADEMY"
+3)toLowerCase() -> Convert the all characters in this string to losercase
+4)replace() -> Replaces all substrings that matches the specified patter with a given value 
+
+  String name = "java programm language"
+
+  naem.replace("java" with "Dart") -> "Dart prgogram language"
+5) spilit() -> split the string at matches of the specified delimiter and retun a list of substring 
+
+String location = "17.908|83.089|345"
+location.split("|") -> [17.908,83.089,345]
+
+
+
+
+

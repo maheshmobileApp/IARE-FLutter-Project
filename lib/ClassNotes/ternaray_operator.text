@@ -1,0 +1,16 @@
+The ternary operator is like if-else statement.
+This is a one-liner replacement for the if-else statement.
+
+condition ? exprIfTrue : exprIfFalse; 
+
+/*
+var age = 11;
+var condition = age >= 18;
+if(condition){
+    print("you are voter);
+}else{
+    print("you are not voter)
+}
+*/
+
+age >=18 ? print("your are voter") : print("your are not voter")

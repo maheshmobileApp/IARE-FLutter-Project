@@ -1,0 +1,28 @@
+Break : Sometimes you will need to break out of the loop immediately without checking the condition. you can use the break statement 
+
+for(var i = 0;i<=10;i++) {
+
+    print(i);
+    if(i==5){
+        break;
+    }
+}
+
+0.......5 
+
+Continue : Sometimes you will need to skip an iteration for specific condition you can you continue statement.
+
+for(var i = 0;i<=10;i++) {
+
+   
+    if(i==5){
+        continue;
+    }
+     print(i);
+}
+
+
+
+
+
+

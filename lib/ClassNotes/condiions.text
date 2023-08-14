@@ -1,0 +1,102 @@
+Types of conditions
+1. if condition
+2. if-else condition
+3. if-else-if condition
+4. switch case
+
+if Codition :
+
+if statement allows us to execute a code block when the  give codition is true 
+
+if(condition) {
+
+    statement 1
+    statement 2
+    .....
+
+
+    .
+    .
+
+    .
+
+    .
+    statement n
+}
+
+var age = 20;
+
+if(age>=18){
+
+    print("you are voter")
+}
+
+if-else statement
+
+if the result of the codition is true, then the body of the if-condition is executed, otherwise, the body of the else conditon is executed
+
+var age = 11;
+var condition = age >= 18;
+if(condition){
+    print("you are voter);
+}else{
+    print("you are not voter)
+}
+
+bool isMale = true;
+if(isMale) {
+    print(")
+}
+
+if-else-if coditon 
+
+when you have multiple if condtions, then you can use if-else-if. 
+
+if(coditon) {
+    statement 1
+}else if(conditon){
+
+}else if(condtion){
+
+}else{
+
+}
+
+int daynumber = 10;
+
+if(daynumber == 1){
+    print("sunday)
+}else if(daynumber == 2){
+    print("monday")
+}else if(daynumber == 3){
+    print("tue")
+}else if(daynumber == 4){
+    print("wed")
+}else if(daynumber == 5){
+    print("thu")
+}else if(daynumber == 6){
+    print("fri")
+}else{
+    print("sat")
+}
+
+Switch Case:
+
+Switch case is used to execute the code block based on the conditon 
+
+switch(expression) {
+
+case value1:
+//statement
+break;
+case value2:
+//statement
+break;
+case value3:
+//statement
+break;
+default:
+
+
+
+}

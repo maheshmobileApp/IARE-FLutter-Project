@@ -1,0 +1,23 @@
+if you want to store multiple values in the same variable, you can use list 
+List in dart is simalr to array in other programming language
+The list is represented by Square Brances[]
+
+//List<datatypes> variableNames = [value1,value2.......value]
+List<int> marks = [23,45,66,75,43];
+List<String> names =["mahesh","sai","devika"]
+
+Properties of list
+1.first -> it returns the first element in the list -> marks.first -> 23
+2.last -> it returns the last element in the list -> marks.last -> 43
+3.isEmpty -> it returns true if the list is empty -> marks.isEmpty -> false
+4.length -> it returns length of the list -> marks.length -> 5
+5. reversed -> it returns the a list in reverse order-> marks.reversed->[43,75,66,45,23]
+
+//Adding item to list
+add()->
+addAll()->
+insert()
+insertAll()
+remove()
+removeAt()
+clear()

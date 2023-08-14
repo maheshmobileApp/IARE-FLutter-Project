@@ -1,0 +1,23 @@
+In programming loops are used to repeat a block of code until certain condition are satisfied.
+
+
+void main(){
+
+    print("hello");
+    print("hello");
+    print("hello");
+    print("hello");
+    print("hello");
+    print("hello");
+    print("hello");
+    print("hello")
+
+    // 7 times 
+
+    1.For loops
+    2.For Each Loop 
+
+    //For Each Loop 
+    
+
+}

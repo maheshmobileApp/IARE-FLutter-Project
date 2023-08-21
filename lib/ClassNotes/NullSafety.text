@@ -1,0 +1,10 @@
+Null Saftey is a feature in the dart that helps developers to avoid null errors.
+This feature is called Sound Null Saftey in dart.
+This allows developers to catch null error at edit time. 
+
+Advantages:
+
+1. Write safe code
+2. Reduce the chances of application crashes.
+3. Easy to find and fix bugs in code 
+

@@ -1,0 +1,49 @@
+//functions are the bloc of code that performs a specific task.
+int a = 20;
+int b = 30;
+
+int z = a + b;
+
+
+
+{
+int x = 40;
+int y = 50;
+
+int r = x+ y;
+
+}
+
+tea -> 
+
+
+Function Advantages:
+
+1. Avoid code Repetition
+2.Easy to divide the complex program into smallar parts
+3. Helps to write a clean code
+
+Syntax 
+
+returnType functionName(prameters1,,,,,,) {
+
+    //fuction body 
+
+
+    retrun returnvalue;
+}
+
+return Type: it tells you that function output type. it can be
+
+   void -> if the function does't return anything you can use void as the return type 
+   string
+   bool
+   int 
+   double
+   List
+   Map
+   class
+
+   Function Name: you can name functions by any name. always follow a lowerCamelCase (printName)
+
+   Parameters: Parameters are the input to the function, which you can write inside the bracket.

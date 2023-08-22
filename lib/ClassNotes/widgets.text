@@ -1,0 +1,28 @@
+
+Widgets are two types
+
+1. statefull widget
+2. stateless widget 
+
+
+1.Contaier
+2.Text
+3.button
+4.TextField
+6.image
+7.ScrollView
+8.Column
+9.Row
+10.Wrap 
+11.ListView
+12.GridView
+13.Stack 
+14.Icon 
+15.Card 
+16.TabBar 
+17.Scaffold
+
+
+
+
+

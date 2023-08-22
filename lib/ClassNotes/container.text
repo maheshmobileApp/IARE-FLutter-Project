@@ -1,0 +1,15 @@
+Contaier widget is same as <div> tag in html
+If this widget does not contain any child whidet, it will fill the whole area on the screen automatically.
+
+
+
+1. Color
+2.child
+3.width
+4.height
+5.decoration
+
+Color: This property is used to set the backgroundColor of the container.
+
+Child: This property is used to store the child widget of the container 
+

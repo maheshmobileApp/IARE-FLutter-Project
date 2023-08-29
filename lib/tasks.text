@@ -18,3 +18,14 @@
 17. Read about maps and practice with example
 18. [12,13,45,12,56,57,78,89] -> from this list filter the vales above 35 [45,56,57,78,89]
 19. [2,3,5,7,8,2,6] -> add 2 to every index and output is [4,5,7,9,10,4,8]
+20. Create one sign up form (user name, email, phone number, password,address)
+    
+     user name -> should be min 3 letters max 30 min 
+    email ->
+    password ->
+    address -> not requried
+    phone number -> phone validaton 
+
+21. create 5 screens 
+    1->2-->3->4->5 
+    

@@ -1,18 +1,31 @@
+import 'package:aug_9pm_class/Navigation/FirstScreen.dart';
+import 'package:aug_9pm_class/Navigation/SecondScreen.dart';
+import 'package:aug_9pm_class/Navigation/ThirsScreen.dart';
 import 'package:flutter/material.dart';
+import 'ColumnAndRow/ColumnAndRow.dart';
+import 'Login/LoginScreen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text("Hello Flutter"),
-      ),
-      body: Container(
+    initialRoute: "/firstScreen",
+    routes: {
+      "/firstScreen": (context) => FirstScreen(),
+      "/secondScreen": (context) => SecondScreen(),
+      "/thirdScreen": (context) => ThirdScreen()
+    },
+  ));
+}
+
+//main -> runApp()-> MaterialApp-> home-> ScaffoldWidget 
+/*
+
+Container(
         // color: Colors.green,
         margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Colors.green,
-          borderRadius: BorderRadius.circular(10),
+            color: Colors.green,
+            borderRadius: BorderRadius.circular(50),
             border:
                 Border.all(width: 10, color: Color.fromRGBO(46, 134, 193, 1))),
         //margin: EdgeInsets.only(left: 10, right: 10, top: 30, bottom: 30),
@@ -30,26 +43,4 @@ void main() {
           ),
         ),
       ),
-    ),
-  ));
-}
-
-//main -> runApp()-> MaterialApp-> home-> ScaffoldWidget 
-/*
-
-MaterialApp(
-    home: Scaffold(
-        body: Container(
-      margin: EdgeInsets.all(10),
-      color: Colors.red,
-      child: Container(
-          margin: EdgeInsets.all(10),
-        //  padding: EdgeInsets.all(50),
-          color: Colors.green,
-          height: 300,
-          width: 300,
-          alignment: Alignment.topRight,
-          child: Text("Hello")),
-    )),
-  )
  */

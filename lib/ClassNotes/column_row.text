@@ -1,0 +1,10 @@
+Row and column are two widgets in flutter that allows developers to 
+align childern horizontally and vertically.
+
+Column:
+
+This widget arranges it's childer in a vertical direction on the screen
+
+y -axis is main axis
+
+x - axis is cross axis

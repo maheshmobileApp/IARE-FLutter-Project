@@ -4,14 +4,18 @@ import 'package:aug_9pm_class/Navigation/ThirsScreen.dart';
 import 'package:flutter/material.dart';
 import 'ColumnAndRow/ColumnAndRow.dart';
 import 'Login/LoginScreen.dart';
+import 'ListView/ListView.dart';
+import 'ListView/ListViewBuilder.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: "/firstScreen",
+    initialRoute: "/listViewBuilder",
     routes: {
       "/firstScreen": (context) => FirstScreen(),
       "/secondScreen": (context) => SecondScreen(),
-      "/thirdScreen": (context) => ThirdScreen()
+      "/thirdScreen": (context) => ThirdScreen(),
+      "/listView": (context) => ListViewScreen(),
+      "/listViewBuilder": (context) => ListViewBuilderScreen()
     },
   ));
 }

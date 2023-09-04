@@ -1,0 +1,25 @@
+
+Push 
+pop
+
+When we navigate to another screen, we use the push method. widget adds the new screen onto the top of the stack.
+Pop method would remove that screen from the stack 
+
+routes {
+
+screen1
+screen2
+screen3
+screen4
+screen5
+
+}
+initalRoute:screen1
+
+
+//screen1 to screen2 -> Navigator.pushNamed('/scree2') -.
+
+//one step back from scree2 to screen1 -> navigator.pop()
+
+//scree1 -> 2->3->4 : navigator.popAndPushedNamed("5")
+//1->2->3->4->5 : 5 to 1 -> popUntil

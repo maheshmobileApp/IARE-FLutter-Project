@@ -1,0 +1,11 @@
+
+ListView is scrollable list of Widgets arranged linearly. It displays it's childern one after another in the scroll direction
+vertical
+horizonatl
+
+ListView Types:
+
+ListView
+ListView.builder
+ListView.separator
+ListView.custom

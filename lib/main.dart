@@ -6,16 +6,19 @@ import 'ColumnAndRow/ColumnAndRow.dart';
 import 'Login/LoginScreen.dart';
 import 'ListView/ListView.dart';
 import 'ListView/ListViewBuilder.dart';
+import 'CounterAppWithStatefullWidget/CounterAppWithStatefullWidget.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: "/listViewBuilder",
+    initialRoute: "/counterAppWithStatefullWidtet",
     routes: {
       "/firstScreen": (context) => FirstScreen(),
       "/secondScreen": (context) => SecondScreen(),
       "/thirdScreen": (context) => ThirdScreen(),
       "/listView": (context) => ListViewScreen(),
-      "/listViewBuilder": (context) => ListViewBuilderScreen()
+      "/listViewBuilder": (context) => ListViewBuilderScreen(),
+      "/counterAppWithStatefullWidtet": (context) =>
+          CounterAppWithStatefullWidget()
     },
   ));
 }

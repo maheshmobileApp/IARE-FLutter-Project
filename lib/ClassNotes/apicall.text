@@ -1,0 +1,11 @@
+REQUEST:
+
+Base URL: https://doctopad-a2d-dev.el.r.appspot.com/
+End Point : api/v1/dashboard
+Method Type : GET
+Body (POST,PUT,OPTIOM,PATCH): no
+Parameters(get): no
+Headders: no
+Authorization: no
+
+

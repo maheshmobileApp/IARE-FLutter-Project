@@ -7,10 +7,13 @@ import 'Login/LoginScreen.dart';
 import 'ListView/ListView.dart';
 import 'ListView/ListViewBuilder.dart';
 import 'CounterAppWithStatefullWidget/CounterAppWithStatefullWidget.dart';
+import 'TodoTaskWithStatefullwidtet/TodoTaskWithStatefullWidget.dart';
+import 'GetApiCall/GetApiCallSample.dart';
+import 'Signup/SignupPage.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: "/counterAppWithStatefullWidtet",
+    initialRoute: "/SignupScreen",
     routes: {
       "/firstScreen": (context) => FirstScreen(),
       "/secondScreen": (context) => SecondScreen(),
@@ -18,7 +21,10 @@ void main() {
       "/listView": (context) => ListViewScreen(),
       "/listViewBuilder": (context) => ListViewBuilderScreen(),
       "/counterAppWithStatefullWidtet": (context) =>
-          CounterAppWithStatefullWidget()
+          CounterAppWithStatefullWidget(),
+      "/todoTask": (context) => TodoTaskWithStatefullWidget(),
+      "/getApiCall": (context) => GetApiCallSample(),
+      "/SignupScreen": (context) => SignupPage()
     },
   ));
 }

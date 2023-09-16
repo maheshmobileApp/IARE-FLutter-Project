@@ -1,6 +1,8 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_overlay_loader/flutter_overlay_loader.dart';
 import 'SignUpStyle.dart';
 
 class SignupPage extends StatefulWidget {
@@ -189,18 +191,44 @@ Authorization: no
     //step 5: create dio object
     final dio = Dio();
     //step 6: call the api
+    Loader.show(context, progressIndicator: CircularProgressIndicator());
     final response = await dio.post(requestUrl, data: signupPayload);
+
+    Loader.hide();
 
     if (response.statusCode == 200) {
       print(response.data);
       final statusValue = response.data["status"] ?? 100;
       if (statusValue == 200) {
-        
-      }else {
-        
+        //registration success
+        Navigator.pushNamed(context, "/todoTask");
+      } else {
+        //registration fail
       }
+      showAlertMessage(response.data["message"] ?? "");
       //{status: 200, message: user registered successfully}
     } else {}
+  }
+
+  showAlertMessage(String message) {
+    final alert = AlertDialog(
+      actions: [
+        TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text("Ok"))
+      ],
+      title: Text("Alert!"),
+      content: Text(message),
+    );
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return alert;
+      },
+    );
   }
 }
 

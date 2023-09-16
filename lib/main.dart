@@ -13,6 +13,7 @@ import 'Signup/SignupPage.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: "/SignupScreen",
     routes: {
       "/firstScreen": (context) => FirstScreen(),

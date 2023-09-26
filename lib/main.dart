@@ -1,3 +1,4 @@
+import 'package:aug_9pm_class/GetApiCall/GetApiCall+modelclass+ListView.dart';
 import 'package:aug_9pm_class/Navigation/FirstScreen.dart';
 import 'package:aug_9pm_class/Navigation/SecondScreen.dart';
 import 'package:aug_9pm_class/Navigation/ThirsScreen.dart';
@@ -10,11 +11,12 @@ import 'CounterAppWithStatefullWidget/CounterAppWithStatefullWidget.dart';
 import 'TodoTaskWithStatefullwidtet/TodoTaskWithStatefullWidget.dart';
 import 'GetApiCall/GetApiCallSample.dart';
 import 'Signup/SignupPage.dart';
+import 'GetApiCall/GetApiCall+ListView.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: "/SignupScreen",
+    initialRoute: "/doctorsModelClassListview",
     routes: {
       "/firstScreen": (context) => FirstScreen(),
       "/secondScreen": (context) => SecondScreen(),
@@ -25,7 +27,9 @@ void main() {
           CounterAppWithStatefullWidget(),
       "/todoTask": (context) => TodoTaskWithStatefullWidget(),
       "/getApiCall": (context) => GetApiCallSample(),
-      "/SignupScreen": (context) => SignupPage()
+      "/SignupScreen": (context) => SignupPage(),
+      "/doctorsList": (context) => GetApiCallListView(),
+      "/doctorsModelClassListview": (context) => GetApiCallModelClassListView()
     },
   ));
 }

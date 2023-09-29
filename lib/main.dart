@@ -2,7 +2,9 @@ import 'package:aug_9pm_class/GetApiCall/GetApiCall+modelclass+ListView.dart';
 import 'package:aug_9pm_class/Navigation/FirstScreen.dart';
 import 'package:aug_9pm_class/Navigation/SecondScreen.dart';
 import 'package:aug_9pm_class/Navigation/ThirsScreen.dart';
+import 'package:aug_9pm_class/Provider/counterProvider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'ColumnAndRow/ColumnAndRow.dart';
 import 'Login/LoginScreen.dart';
 import 'ListView/ListView.dart';
@@ -13,29 +15,37 @@ import 'GetApiCall/GetApiCallSample.dart';
 import 'Signup/SignupPage.dart';
 import 'GetApiCall/GetApiCall+ListView.dart';
 import 'ValueListenableBuilder/CounterApp.dart';
+import 'Provider/counterAppWithProvider.dart';
 void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    initialRoute: "/counterAppWithStatefullWidtet",
-    routes: {
-      "/firstScreen": (context) => FirstScreen(),
-      "/secondScreen": (context) => SecondScreen(),
-      "/thirdScreen": (context) => ThirdScreen(),
-      "/listView": (context) => ListViewScreen(),
-      "/listViewBuilder": (context) => ListViewBuilderScreen(),
-      "/counterAppWithStatefullWidtet": (context) =>
-          CounterAppWithStatefullWidget(),
-      "/todoTask": (context) => TodoTaskWithStatefullWidget(),
-      "/getApiCall": (context) => GetApiCallSample(),
-      "/SignupScreen": (context) => SignupPage(),
-      "/doctorsList": (context) => GetApiCallListView(),
-      "/doctorsModelClassListview": (context) => GetApiCallModelClassListView(),
-        "/counterAppWithValueListenble": (context) => CounterApp()
-    },
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => CounterProvider()),
+    ],
+    child: MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/counterAppWithProvider",
+      routes: {
+        "/firstScreen": (context) => FirstScreen(),
+        "/secondScreen": (context) => SecondScreen(),
+        "/thirdScreen": (context) => ThirdScreen(),
+        "/listView": (context) => ListViewScreen(),
+        "/listViewBuilder": (context) => ListViewBuilderScreen(),
+        "/counterAppWithStatefullWidtet": (context) =>
+            CounterAppWithStatefullWidget(),
+        "/todoTask": (context) => TodoTaskWithStatefullWidget(),
+        "/getApiCall": (context) => GetApiCallSample(),
+        "/SignupScreen": (context) => SignupPage(),
+        "/doctorsList": (context) => GetApiCallListView(),
+        "/doctorsModelClassListview": (context) =>
+            GetApiCallModelClassListView(),
+        "/counterAppWithValueListenble": (context) => CounterApp(),
+        "/counterAppWithProvider":(context) => CounterAppWithProvider()
+      },
+    ),
   ));
 }
 
-//main -> runApp()-> MaterialApp-> home-> ScaffoldWidget 
+//main -> runApp()-> MaterialApp-> home-> ScaffoldWidget
 /*
 
 Container(

@@ -3,6 +3,7 @@ import 'package:aug_9pm_class/Navigation/FirstScreen.dart';
 import 'package:aug_9pm_class/Navigation/SecondScreen.dart';
 import 'package:aug_9pm_class/Navigation/ThirsScreen.dart';
 import 'package:aug_9pm_class/Provider/counterProvider.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'ColumnAndRow/ColumnAndRow.dart';
@@ -16,14 +17,22 @@ import 'Signup/SignupPage.dart';
 import 'GetApiCall/GetApiCall+ListView.dart';
 import 'ValueListenableBuilder/CounterApp.dart';
 import 'Provider/counterAppWithProvider.dart';
-void main() {
+import 'firebase_options.dart';
+import 'Firebase/FirebaseSignup.dart';
+import 'Firebase/FirebaseSigin.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => CounterProvider()),
     ],
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/counterAppWithProvider",
+      initialRoute: "/firebaseSigin",
       routes: {
         "/firstScreen": (context) => FirstScreen(),
         "/secondScreen": (context) => SecondScreen(),
@@ -39,7 +48,9 @@ void main() {
         "/doctorsModelClassListview": (context) =>
             GetApiCallModelClassListView(),
         "/counterAppWithValueListenble": (context) => CounterApp(),
-        "/counterAppWithProvider":(context) => CounterAppWithProvider()
+        "/counterAppWithProvider": (context) => CounterAppWithProvider(),
+        "/firebaseSignup": (context) => FirebaseSignUp(),
+        "/firebaseSigin": (context) => FirebaseSignIn(),
       },
     ),
   ));

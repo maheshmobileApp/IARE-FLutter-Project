@@ -124,6 +124,7 @@ class _FirebaseSignUpState extends State<FirebaseSignIn> {
       final response = await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: _emailTextField.text, password: _passwordTextField.text);
       showAlertMessage("User sign success");
+      Navigator.pushNamed(context, "/newsCreation");
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');

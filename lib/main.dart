@@ -1,3 +1,4 @@
+import 'package:aug_9pm_class/Firebase/NewsCreation.dart';
 import 'package:aug_9pm_class/GetApiCall/GetApiCall+modelclass+ListView.dart';
 import 'package:aug_9pm_class/Navigation/FirstScreen.dart';
 import 'package:aug_9pm_class/Navigation/SecondScreen.dart';
@@ -51,6 +52,7 @@ void main() async {
         "/counterAppWithProvider": (context) => CounterAppWithProvider(),
         "/firebaseSignup": (context) => FirebaseSignUp(),
         "/firebaseSigin": (context) => FirebaseSignIn(),
+        "/newsCreation": (context) => NewsCreation(),
       },
     ),
   ));
